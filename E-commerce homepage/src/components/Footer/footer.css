@@ -1,6 +1,8 @@
+/* Footer styling */
 .footer {
   background-color: #000;
   color: #fff;
+  padding: 40px 0;
 }
 
 .footer h5 {
@@ -24,14 +26,64 @@
 
 .social-icons i {
   font-size: 20px;
+  margin-right: 10px;
 }
 
 .payment-methods img {
   width: 40px;
+  margin-right: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  /* Stack columns vertically */
+  .footer .row {
+    display: block;
+  }
+
+  .footer .col-md-4,
+  .footer .col-md-2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* Center-align social icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  /* Payment methods alignment */
+  .payment-methods img {
+    margin: 10px auto;
+    display: block;
+  }
+
+  /* Adjust heading font size for medium screens */
+  .footer h5 {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 576px) {
+  /* Adjust font size for smaller screens */
+  .footer h5 {
+    font-size: 14px;
+  }
+
+  /* Adjust text alignment for mobile */
   .footer .text-center {
-    text-align: left !important;
+    text-align: center !important;
+  }
+
+  /* Smaller social icons for mobile */
+  .social-icons i {
+    font-size: 18px;
+  }
+
+  /* Smaller payment method icons */
+  .payment-methods img {
+    width: 30px;
   }
 }

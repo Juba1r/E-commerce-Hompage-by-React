@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="main-container">
       <Navbar />
+      <div className="container-fluid middle-section">contents section</div>
       <Footer />
     </div>
   );

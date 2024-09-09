@@ -3,3 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.middle-section{
+  display: flex;
+  padding: 100px 0px;
+
+}
